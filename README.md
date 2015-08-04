@@ -32,6 +32,7 @@ extern template struct StaticObject<int>;
 ```
 There is calls to StaticObject<int>::getInstance() in EXE and DLL modules and what i get is different behavior with optimisation turned on and off. 
 It works as expected:
+
 1. with optimisation turned off and
 2. with following flags: "-Ox -fno-inline", where 'x' is one of optimisation levels 1,2,3.
 
